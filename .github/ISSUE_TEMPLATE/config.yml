@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Consulter le guide de contribution
+    url: https://github.com/elhisse-CLPrepas/cent-productions-ia-uv/blob/main/CONTRIBUTING.md
+    about: Lire les règles et le parcours avant d’ouvrir une demande.

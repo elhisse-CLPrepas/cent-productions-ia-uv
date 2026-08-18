@@ -1,0 +1,41 @@
+name: Signaler une correction
+description: Signaler une erreur, un lien cassé ou une amélioration nécessaire.
+title: "[Correction] "
+labels:
+  - "type:correction"
+body:
+  - type: input
+    id: ressource
+    attributes:
+      label: Ressource concernée
+      description: Indiquer le fichier, la page ou le lien public.
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de correction
+      options:
+        - Erreur factuelle
+        - Lien cassé
+        - Source ou droit manquant
+        - Problème de confidentialité
+        - Problème de compréhension
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Problème observé
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction proposée
+  - type: textarea
+    id: preuve
+    attributes:
+      label: Source ou preuve
+      description: Ajouter un lien fiable lorsque le signalement porte sur un fait.

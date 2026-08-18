@@ -1,0 +1,68 @@
+name: Proposer une production
+description: Proposer un besoin réel et une production IA utile à réaliser.
+title: "[Production] "
+labels:
+  - "type:production"
+  - "etat:a-clarifier"
+body:
+  - type: markdown
+    attributes:
+      value: Merci de vérifier qu’aucune donnée personnelle ou confidentielle ne figure dans ce formulaire.
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin réel
+      description: Quel problème concret souhaitez-vous résoudre ?
+    validations:
+      required: true
+  - type: textarea
+    id: beneficiaire
+    attributes:
+      label: Public bénéficiaire
+      description: Qui utilisera ou bénéficiera du résultat ?
+    validations:
+      required: true
+  - type: textarea
+    id: resultat
+    attributes:
+      label: Résultat envisagé
+      description: Quel livrable concret souhaitez-vous produire ?
+    validations:
+      required: true
+  - type: dropdown
+    id: categorie
+    attributes:
+      label: Catégorie pilote
+      options:
+        - Enseigner et apprendre
+        - Organiser et gérer un projet
+        - Communiquer et présenter
+        - Produire des documents
+        - Résoudre un problème numérique
+    validations:
+      required: true
+  - type: dropdown
+    id: niveau
+    attributes:
+      label: Niveau GitHub
+      options:
+        - Découverte
+        - Contribution guidée
+        - Contribution autonome
+        - Avancé
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Données ou sources prévues
+      description: Indiquer les ressources nécessaires et leurs droits d’utilisation connus.
+  - type: checkboxes
+    id: engagement
+    attributes:
+      label: Engagement
+      options:
+        - label: Je confirme que cette proposition ne contient aucune donnée sensible ou confidentielle.
+          required: true
+        - label: J’accepte la review humaine et les demandes de correction avant publication.
+          required: true

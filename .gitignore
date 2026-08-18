@@ -1,0 +1,30 @@
+# Systèmes et éditeurs
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Fichiers temporaires et sauvegardes
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+~$*.docx
+
+# Sorties locales et caches
+.docx-qa/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Journaux
+*.log

@@ -1,0 +1,45 @@
+name: Demander de l’aide
+description: Signaler un blocage dans le parcours de contribution.
+title: "[Aide] "
+labels:
+  - "etat:bloque"
+body:
+  - type: dropdown
+    id: etape
+    attributes:
+      label: Étape concernée
+      options:
+        - Choix ou qualification de l’Issue
+        - Branche ou fork
+        - Rédaction de la fiche
+        - Sources ou droits
+        - Pull Request
+        - Corrections après review
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: blocage
+    attributes:
+      label: Blocage rencontré
+      description: Décrire précisément ce qui empêche de continuer.
+    validations:
+      required: true
+  - type: textarea
+    id: essais
+    attributes:
+      label: Essais déjà réalisés
+      description: Indiquer les étapes ou solutions déjà testées.
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: J’ai retiré les mots de passe, jetons et données personnelles.
+          required: true
