@@ -1,0 +1,54 @@
+name: CI portail
+
+on:
+  pull_request:
+    paths:
+      - "PORTAIL-100-PRODUCTIONS-IA-V1/**"
+      - ".github/workflows/ci-portal.yml"
+  push:
+    branches: [main]
+    paths:
+      - "PORTAIL-100-PRODUCTIONS-IA-V1/**"
+      - ".github/workflows/ci-portal.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-pages:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: PORTAIL-100-PRODUCTIONS-IA-V1
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+          cache-dependency-path: PORTAIL-100-PRODUCTIONS-IA-V1/package-lock.json
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Valider le contenu
+        run: npm run validate:content
+
+      - name: Contrôler le code
+        run: npm run lint
+
+      - name: Construire GitHub Pages
+        run: npm run build:pages-target
+
+      - name: Vérifier l’artefact
+        run: |
+          test -f release/github-pages/index.html
+          test -f release/github-pages/config/portal.json
+          test -f release/github-pages/data/projects.json
+          test -f release/github-pages/data/dashboard.json
+          test -n "$(find release/github-pages/assets -name '*.js' -print -quit)"
+          test -n "$(find release/github-pages/assets -name '*.css' -print -quit)"

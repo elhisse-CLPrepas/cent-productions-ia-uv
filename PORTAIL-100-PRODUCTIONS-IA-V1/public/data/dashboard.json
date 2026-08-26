@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "snapshotDate": "2026-08-26",
+  "source": "GitHub connector read-only inspection",
+  "goal": 100,
+  "github": {
+    "issues": 0,
+    "pullRequests": 0,
+    "validatedProductions": 0,
+    "publishedProductions": 0,
+    "pagesEnabled": false,
+    "discussionsEnabled": false,
+    "defaultBranch": "main",
+    "mainProtected": true
+  },
+  "portal": {
+    "pilotProposals": 5,
+    "initialCategories": 5,
+    "workflowSteps": 8
+  },
+  "note": "Les propositions du portail ne sont pas comptées comme productions GitHub validées."
+}
+

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "release": "PORTAIL-100-PRODUCTIONS-IA-V1",
+  "generatedAt": "2026-08-26",
+  "sourceSnapshot": "GitHub repository inspected on 2026-08-26",
+  "targets": [
+    "Vite/Vinext",
+    "GitHub Pages",
+    "cPanel PHP read-only"
+  ],
+  "files": [
+    {
+      "path": "release/github-pages/assets/index-CwqMX9_W.js",
+      "bytes": 11243,
+      "sha256": "9894e9cb90bf92cfed8d61c43ec1b1e48449b5e3e7a991f935bc133198272333"
+    },
+    {
+      "path": "release/github-pages/assets/index-oMAOu03X.css",
+      "bytes": 8846,
+      "sha256": "c78172f922c0a377a4d9b90fd67c4b36fe413879986845732582251c73406453"
+    },
+    {
+      "path": "release/github-pages/config/portal.json",
+      "bytes": 224,
+      "sha256": "557d913dc46f27bee56f52baee7b770590ee34dc1572ea0b1aa91a19142129fd"
+    },
+    {
+      "path": "release/github-pages/data/dashboard.json",
+      "bytes": 560,
+      "sha256": "52fbfb71ba8d254412da7df612c5ad7f6625170d92038ebae879b55c0423ecf1"
+    },
+    {
+      "path": "release/github-pages/data/projects.json",
+      "bytes": 4005,
+      "sha256": "c272a7cc890ac279e63a8de94a9b80691c13144cddd7d3408200006b10d24b3d"
+    },
+    {
+      "path": "release/github-pages/index.html",
+      "bytes": 1497,
+      "sha256": "cd61fef9294638e7875db449f5e59021edec76e5bd6a793a194504b690a5237b"
+    },
+    {
+      "path": "release/php-portal/README-PHP.md",
+      "bytes": 812,
+      "sha256": "5514c8a5b5b4dcbcbad7af86c974b08efafd4d8809015e6af544f8b1f80679d2"
+    },
+    {
+      "path": "release/php-portal/api/.htaccess",
+      "bytes": 311,
+      "sha256": "df5171f57ec5933122f04ae522750bf185825463a5b5a4e755955f8fd78f55a4"
+    },
+    {
+      "path": "release/php-portal/api/bootstrap.php",
+      "bytes": 1855,
+      "sha256": "889fbc2415de1a36c9da1d81162f30c8fd184d0af133d6c4675a2748e56a2be5"
+    },
+    {
+      "path": "release/php-portal/api/catalogue.php",
+      "bytes": 221,
+      "sha256": "27d3e3d9c6c558100843ef96b89a89c516bb89f3c84bf6749ef0c350bd912c9b"
+    },
+    {
+      "path": "release/php-portal/api/dashboard.php",
+      "bytes": 222,
+      "sha256": "294872659db8826e382ebcfd29b8c84d306b4d75a6ac3fc4683cce778c75a68a"
+    },
+    {
+      "path": "release/php-portal/api/health.php",
+      "bytes": 267,
+      "sha256": "6005e647dd2d750511e85c25b8c91e0d1eff5fd9f4a26fbc01a26aa0f0951f25"
+    },
+    {
+      "path": "release/php-portal/assets/index-CwqMX9_W.js",
+      "bytes": 11243,
+      "sha256": "9894e9cb90bf92cfed8d61c43ec1b1e48449b5e3e7a991f935bc133198272333"
+    },
+    {
+      "path": "release/php-portal/assets/index-oMAOu03X.css",
+      "bytes": 8846,
+      "sha256": "c78172f922c0a377a4d9b90fd67c4b36fe413879986845732582251c73406453"
+    },
+    {
+      "path": "release/php-portal/config/portal.json",
+      "bytes": 228,
+      "sha256": "3948cd91efcd8c7120a3868781e1ca551f79108523126ff81d0ee3ddd4713579"
+    },
+    {
+      "path": "release/php-portal/data/dashboard.json",
+      "bytes": 560,
+      "sha256": "52fbfb71ba8d254412da7df612c5ad7f6625170d92038ebae879b55c0423ecf1"
+    },
+    {
+      "path": "release/php-portal/data/projects.json",
+      "bytes": 4005,
+      "sha256": "c272a7cc890ac279e63a8de94a9b80691c13144cddd7d3408200006b10d24b3d"
+    },
+    {
+      "path": "release/php-portal/index.html",
+      "bytes": 1497,
+      "sha256": "cd61fef9294638e7875db449f5e59021edec76e5bd6a793a194504b690a5237b"
+    }
+  ]
+}

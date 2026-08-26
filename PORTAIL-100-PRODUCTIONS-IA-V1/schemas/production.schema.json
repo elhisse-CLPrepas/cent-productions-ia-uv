@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ln-ia.example/schemas/production.schema.json",
+  "title": "Production IA utile et vérifiée",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "slug", "title", "category", "summary", "need", "audience", "result", "status", "difficulty", "verified"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^P[0-9]{3}$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 8, "maxLength": 120 },
+    "category": { "type": "string", "minLength": 3 },
+    "summary": { "type": "string", "minLength": 30, "maxLength": 300 },
+    "need": { "type": "string", "minLength": 20 },
+    "audience": { "type": "string", "minLength": 3 },
+    "result": { "type": "string", "minLength": 10 },
+    "status": { "enum": ["Idée proposée", "À clarifier", "Prête à produire", "En production", "En revue", "Corrections demandées", "Validée", "Publiée"] },
+    "difficulty": { "enum": ["Découverte", "Guidée", "Autonome", "Avancée"] },
+    "owner": { "type": "string" },
+    "reviewer": { "type": "string" },
+    "progress": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "verified": { "type": "boolean" },
+    "pilot": { "type": "boolean" },
+    "github": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "issueUrl": { "type": "string", "format": "uri" },
+        "pullRequestUrl": { "type": "string", "format": "uri" },
+        "commitSha": { "type": "string", "pattern": "^[0-9a-f]{7,40}$" }
+      }
+    }
+  }
+}
+

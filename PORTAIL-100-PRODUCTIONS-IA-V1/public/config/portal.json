@@ -1,0 +1,8 @@
+{
+  "mode": "static",
+  "dataEndpoint": "/data/projects.json",
+  "dashboardEndpoint": "/data/dashboard.json",
+  "snapshotDate": "2026-08-26",
+  "repository": "https://github.com/elhisse-CLPrepas/cent-productions-ia-uv"
+}
+

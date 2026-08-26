@@ -1,0 +1,8 @@
+{
+  "mode": "php-read-only",
+  "dataEndpoint": "./api/catalogue.php",
+  "dashboardEndpoint": "./api/dashboard.php",
+  "snapshotDate": "2026-08-26",
+  "repository": "https://github.com/elhisse-CLPrepas/cent-productions-ia-uv"
+}
+
