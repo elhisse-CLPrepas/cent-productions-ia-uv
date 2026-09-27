@@ -1,0 +1,646 @@
+{
+  "pages": 225,
+  "anchors": {
+    "couverture": 1,
+    "titre": 2,
+    "sommaire": 3,
+    "lire": 4,
+    "methode": 5,
+    "atelier": 6,
+    "prompts": 7,
+    "vite": 8,
+    "vite-prompt": 9,
+    "cat-1": 10,
+    "G001": 11,
+    "G001-prompt": 12,
+    "G002": 13,
+    "G002-prompt": 14,
+    "G003": 15,
+    "G003-prompt": 16,
+    "G004": 17,
+    "G004-prompt": 18,
+    "G005": 19,
+    "G005-prompt": 20,
+    "G006": 21,
+    "G006-prompt": 22,
+    "G007": 23,
+    "G007-prompt": 24,
+    "G008": 25,
+    "G008-prompt": 26,
+    "G009": 27,
+    "G009-prompt": 28,
+    "G010": 29,
+    "G010-prompt": 30,
+    "cat-2": 31,
+    "G011": 32,
+    "G011-prompt": 33,
+    "G012": 34,
+    "G012-prompt": 35,
+    "G013": 36,
+    "G013-prompt": 37,
+    "G014": 38,
+    "G014-prompt": 39,
+    "G015": 40,
+    "G015-prompt": 41,
+    "G016": 42,
+    "G016-prompt": 43,
+    "G017": 44,
+    "G017-prompt": 45,
+    "G018": 46,
+    "G018-prompt": 47,
+    "G019": 48,
+    "G019-prompt": 49,
+    "G020": 50,
+    "G020-prompt": 51,
+    "cat-3": 52,
+    "G021": 53,
+    "G021-prompt": 54,
+    "G022": 55,
+    "G022-prompt": 56,
+    "G023": 57,
+    "G023-prompt": 58,
+    "G024": 59,
+    "G024-prompt": 60,
+    "G025": 61,
+    "G025-prompt": 62,
+    "G026": 63,
+    "G026-prompt": 64,
+    "G027": 65,
+    "G027-prompt": 66,
+    "G028": 67,
+    "G028-prompt": 68,
+    "G029": 69,
+    "G029-prompt": 70,
+    "G030": 71,
+    "G030-prompt": 72,
+    "cat-4": 73,
+    "G031": 74,
+    "G031-prompt": 75,
+    "G032": 76,
+    "G032-prompt": 77,
+    "G033": 78,
+    "G033-prompt": 79,
+    "G034": 80,
+    "G034-prompt": 81,
+    "G035": 82,
+    "G035-prompt": 83,
+    "G036": 84,
+    "G036-prompt": 85,
+    "G037": 86,
+    "G037-prompt": 87,
+    "G038": 88,
+    "G038-prompt": 89,
+    "G039": 90,
+    "G039-prompt": 91,
+    "G040": 92,
+    "G040-prompt": 93,
+    "cat-5": 94,
+    "G041": 95,
+    "G041-prompt": 96,
+    "G042": 97,
+    "G042-prompt": 98,
+    "G043": 99,
+    "G043-prompt": 100,
+    "G044": 101,
+    "G044-prompt": 102,
+    "G045": 103,
+    "G045-prompt": 104,
+    "G046": 105,
+    "G046-prompt": 106,
+    "G047": 107,
+    "G047-prompt": 108,
+    "G048": 109,
+    "G048-prompt": 110,
+    "G049": 111,
+    "G049-prompt": 112,
+    "G050": 113,
+    "G050-prompt": 114,
+    "cat-6": 115,
+    "G051": 116,
+    "G051-prompt": 117,
+    "G052": 118,
+    "G052-prompt": 119,
+    "G053": 120,
+    "G053-prompt": 121,
+    "G054": 122,
+    "G054-prompt": 123,
+    "G055": 124,
+    "G055-prompt": 125,
+    "G056": 126,
+    "G056-prompt": 127,
+    "G057": 128,
+    "G057-prompt": 129,
+    "G058": 130,
+    "G058-prompt": 131,
+    "G059": 132,
+    "G059-prompt": 133,
+    "G060": 134,
+    "G060-prompt": 135,
+    "cat-7": 136,
+    "G061": 137,
+    "G061-prompt": 138,
+    "G062": 139,
+    "G062-prompt": 140,
+    "G063": 141,
+    "G063-prompt": 142,
+    "G064": 143,
+    "G064-prompt": 144,
+    "G065": 145,
+    "G065-prompt": 146,
+    "G066": 147,
+    "G066-prompt": 148,
+    "G067": 149,
+    "G067-prompt": 150,
+    "G068": 151,
+    "G068-prompt": 152,
+    "G069": 153,
+    "G069-prompt": 154,
+    "G070": 155,
+    "G070-prompt": 156,
+    "cat-8": 157,
+    "G071": 158,
+    "G071-prompt": 159,
+    "G072": 160,
+    "G072-prompt": 161,
+    "G073": 162,
+    "G073-prompt": 163,
+    "G074": 164,
+    "G074-prompt": 165,
+    "G075": 166,
+    "G075-prompt": 167,
+    "G076": 168,
+    "G076-prompt": 169,
+    "G077": 170,
+    "G077-prompt": 171,
+    "G078": 172,
+    "G078-prompt": 173,
+    "G079": 174,
+    "G079-prompt": 175,
+    "G080": 176,
+    "G080-prompt": 177,
+    "cat-9": 178,
+    "G081": 179,
+    "G081-prompt": 180,
+    "G082": 181,
+    "G082-prompt": 182,
+    "G083": 183,
+    "G083-prompt": 184,
+    "G084": 185,
+    "G084-prompt": 186,
+    "G085": 187,
+    "G085-prompt": 188,
+    "G086": 189,
+    "G086-prompt": 190,
+    "G087": 191,
+    "G087-prompt": 192,
+    "G088": 193,
+    "G088-prompt": 194,
+    "G089": 195,
+    "G089-prompt": 196,
+    "G090": 197,
+    "G090-prompt": 198,
+    "cat-10": 199,
+    "G091": 200,
+    "G091-prompt": 201,
+    "G092": 202,
+    "G092-prompt": 203,
+    "G093": 204,
+    "G093-prompt": 205,
+    "G094": 206,
+    "G094-prompt": 207,
+    "G095": 208,
+    "G095-prompt": 209,
+    "G096": 210,
+    "G096-prompt": 211,
+    "G097": 212,
+    "G097-prompt": 213,
+    "G098": 214,
+    "G098-prompt": 215,
+    "G099": 216,
+    "G099-prompt": 217,
+    "G100": 218,
+    "G100-prompt": 219,
+    "contribuer": 220,
+    "validation": 221,
+    "preuves": 222,
+    "statuts": 223,
+    "parcours": 224,
+    "sources": 225
+  },
+  "categoryPages": {
+    "1": 10,
+    "2": 31,
+    "3": 52,
+    "4": 73,
+    "5": 94,
+    "6": 115,
+    "7": 136,
+    "8": 157,
+    "9": 178,
+    "10": 199
+  },
+  "projectPages": {
+    "G001": {
+      "brief": 11,
+      "prompt": 12
+    },
+    "G002": {
+      "brief": 13,
+      "prompt": 14
+    },
+    "G003": {
+      "brief": 15,
+      "prompt": 16
+    },
+    "G004": {
+      "brief": 17,
+      "prompt": 18
+    },
+    "G005": {
+      "brief": 19,
+      "prompt": 20
+    },
+    "G006": {
+      "brief": 21,
+      "prompt": 22
+    },
+    "G007": {
+      "brief": 23,
+      "prompt": 24
+    },
+    "G008": {
+      "brief": 25,
+      "prompt": 26
+    },
+    "G009": {
+      "brief": 27,
+      "prompt": 28
+    },
+    "G010": {
+      "brief": 29,
+      "prompt": 30
+    },
+    "G011": {
+      "brief": 32,
+      "prompt": 33
+    },
+    "G012": {
+      "brief": 34,
+      "prompt": 35
+    },
+    "G013": {
+      "brief": 36,
+      "prompt": 37
+    },
+    "G014": {
+      "brief": 38,
+      "prompt": 39
+    },
+    "G015": {
+      "brief": 40,
+      "prompt": 41
+    },
+    "G016": {
+      "brief": 42,
+      "prompt": 43
+    },
+    "G017": {
+      "brief": 44,
+      "prompt": 45
+    },
+    "G018": {
+      "brief": 46,
+      "prompt": 47
+    },
+    "G019": {
+      "brief": 48,
+      "prompt": 49
+    },
+    "G020": {
+      "brief": 50,
+      "prompt": 51
+    },
+    "G021": {
+      "brief": 53,
+      "prompt": 54
+    },
+    "G022": {
+      "brief": 55,
+      "prompt": 56
+    },
+    "G023": {
+      "brief": 57,
+      "prompt": 58
+    },
+    "G024": {
+      "brief": 59,
+      "prompt": 60
+    },
+    "G025": {
+      "brief": 61,
+      "prompt": 62
+    },
+    "G026": {
+      "brief": 63,
+      "prompt": 64
+    },
+    "G027": {
+      "brief": 65,
+      "prompt": 66
+    },
+    "G028": {
+      "brief": 67,
+      "prompt": 68
+    },
+    "G029": {
+      "brief": 69,
+      "prompt": 70
+    },
+    "G030": {
+      "brief": 71,
+      "prompt": 72
+    },
+    "G031": {
+      "brief": 74,
+      "prompt": 75
+    },
+    "G032": {
+      "brief": 76,
+      "prompt": 77
+    },
+    "G033": {
+      "brief": 78,
+      "prompt": 79
+    },
+    "G034": {
+      "brief": 80,
+      "prompt": 81
+    },
+    "G035": {
+      "brief": 82,
+      "prompt": 83
+    },
+    "G036": {
+      "brief": 84,
+      "prompt": 85
+    },
+    "G037": {
+      "brief": 86,
+      "prompt": 87
+    },
+    "G038": {
+      "brief": 88,
+      "prompt": 89
+    },
+    "G039": {
+      "brief": 90,
+      "prompt": 91
+    },
+    "G040": {
+      "brief": 92,
+      "prompt": 93
+    },
+    "G041": {
+      "brief": 95,
+      "prompt": 96
+    },
+    "G042": {
+      "brief": 97,
+      "prompt": 98
+    },
+    "G043": {
+      "brief": 99,
+      "prompt": 100
+    },
+    "G044": {
+      "brief": 101,
+      "prompt": 102
+    },
+    "G045": {
+      "brief": 103,
+      "prompt": 104
+    },
+    "G046": {
+      "brief": 105,
+      "prompt": 106
+    },
+    "G047": {
+      "brief": 107,
+      "prompt": 108
+    },
+    "G048": {
+      "brief": 109,
+      "prompt": 110
+    },
+    "G049": {
+      "brief": 111,
+      "prompt": 112
+    },
+    "G050": {
+      "brief": 113,
+      "prompt": 114
+    },
+    "G051": {
+      "brief": 116,
+      "prompt": 117
+    },
+    "G052": {
+      "brief": 118,
+      "prompt": 119
+    },
+    "G053": {
+      "brief": 120,
+      "prompt": 121
+    },
+    "G054": {
+      "brief": 122,
+      "prompt": 123
+    },
+    "G055": {
+      "brief": 124,
+      "prompt": 125
+    },
+    "G056": {
+      "brief": 126,
+      "prompt": 127
+    },
+    "G057": {
+      "brief": 128,
+      "prompt": 129
+    },
+    "G058": {
+      "brief": 130,
+      "prompt": 131
+    },
+    "G059": {
+      "brief": 132,
+      "prompt": 133
+    },
+    "G060": {
+      "brief": 134,
+      "prompt": 135
+    },
+    "G061": {
+      "brief": 137,
+      "prompt": 138
+    },
+    "G062": {
+      "brief": 139,
+      "prompt": 140
+    },
+    "G063": {
+      "brief": 141,
+      "prompt": 142
+    },
+    "G064": {
+      "brief": 143,
+      "prompt": 144
+    },
+    "G065": {
+      "brief": 145,
+      "prompt": 146
+    },
+    "G066": {
+      "brief": 147,
+      "prompt": 148
+    },
+    "G067": {
+      "brief": 149,
+      "prompt": 150
+    },
+    "G068": {
+      "brief": 151,
+      "prompt": 152
+    },
+    "G069": {
+      "brief": 153,
+      "prompt": 154
+    },
+    "G070": {
+      "brief": 155,
+      "prompt": 156
+    },
+    "G071": {
+      "brief": 158,
+      "prompt": 159
+    },
+    "G072": {
+      "brief": 160,
+      "prompt": 161
+    },
+    "G073": {
+      "brief": 162,
+      "prompt": 163
+    },
+    "G074": {
+      "brief": 164,
+      "prompt": 165
+    },
+    "G075": {
+      "brief": 166,
+      "prompt": 167
+    },
+    "G076": {
+      "brief": 168,
+      "prompt": 169
+    },
+    "G077": {
+      "brief": 170,
+      "prompt": 171
+    },
+    "G078": {
+      "brief": 172,
+      "prompt": 173
+    },
+    "G079": {
+      "brief": 174,
+      "prompt": 175
+    },
+    "G080": {
+      "brief": 176,
+      "prompt": 177
+    },
+    "G081": {
+      "brief": 179,
+      "prompt": 180
+    },
+    "G082": {
+      "brief": 181,
+      "prompt": 182
+    },
+    "G083": {
+      "brief": 183,
+      "prompt": 184
+    },
+    "G084": {
+      "brief": 185,
+      "prompt": 186
+    },
+    "G085": {
+      "brief": 187,
+      "prompt": 188
+    },
+    "G086": {
+      "brief": 189,
+      "prompt": 190
+    },
+    "G087": {
+      "brief": 191,
+      "prompt": 192
+    },
+    "G088": {
+      "brief": 193,
+      "prompt": 194
+    },
+    "G089": {
+      "brief": 195,
+      "prompt": 196
+    },
+    "G090": {
+      "brief": 197,
+      "prompt": 198
+    },
+    "G091": {
+      "brief": 200,
+      "prompt": 201
+    },
+    "G092": {
+      "brief": 202,
+      "prompt": 203
+    },
+    "G093": {
+      "brief": 204,
+      "prompt": 205
+    },
+    "G094": {
+      "brief": 206,
+      "prompt": 207
+    },
+    "G095": {
+      "brief": 208,
+      "prompt": 209
+    },
+    "G096": {
+      "brief": 210,
+      "prompt": 211
+    },
+    "G097": {
+      "brief": 212,
+      "prompt": 213
+    },
+    "G098": {
+      "brief": 214,
+      "prompt": 215
+    },
+    "G099": {
+      "brief": 216,
+      "prompt": 217
+    },
+    "G100": {
+      "brief": 218,
+      "prompt": 219
+    }
+  },
+  "sourceSha256": "825524c6b8765fca75ee406e49a1ca3f29f529fa275d197a5e191340f6313d35",
+  "pdfSha256": "806ba438fda76758fdc100e32bc2d8828fe8f207213e9e3b8cf1dfdf115facf0"
+}

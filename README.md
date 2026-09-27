@@ -28,6 +28,14 @@ Documents de référence :
 - [Guide de suivi des décisions V2](guide-d%C3%A9cisions-cadrage-v2.docx)
 - [Documentation GitHub Projects en français](documentation-projects-github.md)
 
+## Livre interactif des cent ateliers
+
+Le [lecteur Vite](livre-cent-ateliers-vite/README.md) propose 100 ateliers, des prompts personnalisables et un [guide PDF de 225 pages](livre-cent-ateliers-vite/public/guide-ln-ia.pdf).
+
+**Adresse de partage prévue :** https://elhisse-clprepas.github.io/cent-productions-ia-uv/
+
+La publication est préparée avec GitHub Actions. Cette adresse devient disponible après activation de Pages et réussite du premier déploiement depuis main. Le catalogue présente des projets à réaliser ; il ne représente pas cent productions déjà validées.
+
 ## Objectifs
 
 - publier 100 productions IA utiles, vérifiées et réutilisables ;
