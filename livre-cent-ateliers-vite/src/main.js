@@ -117,7 +117,7 @@ function renderProject(id){
  $('#prompt-form').onsubmit=e=>e.preventDefault();
  $('#prompt-form').oninput=e=>{if(e.target.dataset.field){values[e.target.dataset.field]=e.target.value;refreshPrompt(p);}};
  $('#copy').onclick=()=>copyPrompt(p);$('#download').onclick=()=>downloadPrompt(p);
- $('#clear-fields').onclick=()=>{state.values[p.id]={};renderProject(p);};
+ $('#clear-fields').onclick=()=>{state.values[p.id]={};renderProject(p.id);};
  $('#share-atelier').onclick=async()=>{
   const success=await copyText(atelierLink(window.location.href,p.id));
   toast(success?'Lien de l’atelier copié.':'Copiez l’adresse de cette page dans votre navigateur.');
