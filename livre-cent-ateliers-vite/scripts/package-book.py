@@ -10,7 +10,8 @@ js='\n'.join(line for line in (A/'src/main.js').read_text(encoding='utf-8').spli
 css=(A/'src/style.css').read_text(encoding='utf-8')
 safe_json=lambda x:json.dumps(x,ensure_ascii=False).replace('<','\\u003c')
 cover='data:image/png;base64,'+base64.b64encode((A/'public/couverture.png').read_bytes()).decode()
-script=utils+'\nconst esc=escapeHtml;\nconst book='+safe_json(book)+';\nconst pageMap='+safe_json(page_map)+';\nwindow.__BOOK_COVER__='+safe_json(cover)+';\nwindow.__BOOK_PDF__="./pdf/guide-cent-ateliers-ln-ia-edition-design.pdf";\n'+js
+logo='data:image/png;base64,'+base64.b64encode((A/'public/logo-ln-ia.png').read_bytes()).decode()
+script='window.__BOOK_LOGO__='+safe_json(logo)+';\n'+utils+'\nconst esc=escapeHtml;\nconst book='+safe_json(book)+';\nconst pageMap='+safe_json(page_map)+';\nwindow.__BOOK_COVER__='+safe_json(cover)+';\nwindow.__BOOK_PDF__="./pdf/guide-cent-ateliers-ln-ia-edition-design.pdf";\n'+js
 assert '</script' not in script.lower()
 html='<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#102747"><title>Le livre des cent ateliers · LN IA</title><style>'+css+'</style></head><body><a class="skip" href="#content">Aller au contenu</a><div id="app"></div><script>'+script+'</script></body></html>'
 (O/'livre-cent-ateliers-ln-ia.html').write_text(html,encoding='utf-8')

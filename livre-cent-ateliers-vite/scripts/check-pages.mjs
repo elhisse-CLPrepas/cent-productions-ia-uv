@@ -26,6 +26,7 @@ assert.equal(read('guide-ln-ia.pdf').subarray(0, 5).toString(), '%PDF-');
 assert.equal(createHash('sha256').update(read('guide-ln-ia.pdf')).digest('hex'), map.pdfSha256,
   'The downloadable PDF differs from the edition used by the page links');
 assert.deepEqual([...read('couverture.png').subarray(0, 8)], [137,80,78,71,13,10,26,10]);
+assert.deepEqual([...read('logo-ln-ia.png').subarray(0, 8)], [137,80,78,71,13,10,26,10]);
 assert.equal(book.projects.length, 100);
 assert.equal(book.categories.length, 10);
 for (const project of book.projects) {
@@ -39,7 +40,7 @@ for (const entry of fs.readdirSync(dist, { recursive: true, withFileTypes: true 
   const relative = path.relative(dist, path.join(entry.parentPath, entry.name)).replaceAll('\\', '/');
   assert.ok(!entry.isSymbolicLink(), 'Symbolic link in published output: '+relative);
   if (!entry.isFile()) continue;
-  assert.ok(['index.html', 'guide-ln-ia.pdf', 'couverture.png'].includes(relative)
+  assert.ok(['index.html', 'guide-ln-ia.pdf', 'couverture.png', 'logo-ln-ia.png'].includes(relative)
     || /^assets\/[^/]+\.(js|css)$/.test(relative), 'Unexpected published file: '+relative);
 }
 console.log('Pages ready: '+book.projects.length+' workshops, '+map.pages+' PDF pages, '+assets.length+' linked bundles.');
