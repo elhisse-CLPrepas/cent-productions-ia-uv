@@ -1,41 +1,33 @@
 # Contribuer au projet
 
-Merci de contribuer à **100 Productions IA utiles et vérifiées**. Ce guide décrit le parcours obligatoire pour proposer, produire, faire relire et publier une contribution.
+## Fonctionnement actuel : auteur seul
 
-## Avant de commencer
+Depuis le 28 septembre 2026, le responsable du dépôt peut produire, contrôler et fusionner ses propres contributions. Aucune approbation par un autre compte GitHub n’est obligatoire. L’auteur possède déjà les droits d’écriture et d’administration ; cette décision n’accorde aucun accès supplémentaire au public.
 
-- lire le [README](README.md) et les [critères de qualité](gouvernance/CRITERES-QUALITE.md) ;
-- ne jamais publier de données personnelles, confidentielles ou non autorisées ;
-- vérifier les droits d’utilisation des textes, images, données et autres ressources ;
-- commencer toute contribution par une Issue.
+## Parcours simple
 
-## Parcours de contribution
+1. Préparer une modification sur une branche et conserver un commit clair.
+2. Ouvrir une Pull Request avec le besoin, le résultat et les contrôles effectués.
+3. Corriger les erreurs et vérifier la réussite des contrôles automatiques disponibles.
+4. L’auteur relit le résultat et décide de la fusion dans `main`.
+5. Pour le livre Vite, le workflow publie automatiquement sur GitHub Pages. Vérifier ensuite le site et le PDF.
 
-1. Ouvrir le formulaire « Proposer une production ».
-2. Attendre la qualification, le numéro provisoire et l’affectation.
-3. Créer une branche `contribution/PXXX-titre-court` ou travailler depuis un fork.
-4. Copier le fichier [`MODELE-FICHE-PRODUCTION.md`](modeles/MODELE-FICHE-PRODUCTION.md) dans la catégorie appropriée.
-5. Nommer la fiche `PXXX-categorie-titre-court.md`.
-6. Compléter la fiche, ajouter le livrable ou son lien et joindre les preuves.
-7. Exécuter la [checklist du contributeur](modeles/CHECKLIST-CONTRIBUTEUR.md).
-8. Ouvrir une Pull Request liée à l’Issue.
-9. Répondre aux commentaires et apporter les corrections demandées.
-10. Attendre la validation et la fusion par un mainteneur.
+Une Issue reste utile pour une production PXXX ou un travail à suivre dans GitHub Projects. Elle est facultative pour une correction technique ou documentaire autonome. Le responsable peut qualifier et s’attribuer lui-même une production.
+
+## Contenu et preuves
+
+- Pour une nouvelle production, utiliser le [modèle de fiche](modeles/MODELE-FICHE-PRODUCTION.md) et la [checklist](modeles/CHECKLIST-CONTRIBUTEUR.md).
+- Décrire le besoin, le public, le rôle de l’IA, les limites et les preuves.
+- Contrôler les faits, les liens et les droits des ressources ; exclure les secrets et les données non autorisées.
+- Indiquer « autocontrôle de l’auteur » lorsque personne d’autre n’a relu. Une IA ne constitue pas une validation humaine indépendante.
+- Pour un contenu sensible ou à fort impact, solliciter un avis compétent dès que possible et préciser les limites de validation.
 
 ## Règles Git
 
-- aucun push direct dans `main` ;
-- une production principale par Pull Request ;
-- des commits courts, explicites et liés au travail réalisé ;
-- aucun secret, mot de passe, jeton ou fichier `.env` dans le dépôt ;
-- ne pas modifier une contribution attribuée à une autre personne sans accord.
+- Préférer branche → PR → contrôles → fusion pour conserver un historique lisible.
+- Les droits de l’auteur permettent aussi une écriture directe dans `main` ; le parcours par PR reste recommandé.
+- Les push forcés et la suppression de `main` restent interdits.
+- Ne jamais ajouter de secret, de jeton ou de fichier `.env` au dépôt.
+- Le déploiement du livre reste conditionné à la réussite des tests et de la construction dans le workflow.
 
-## Validation humaine
-
-Toute contribution exige au moins une review humaine favorable. Deux avis humains favorables sont obligatoires pour un contenu sensible ou à fort impact, notamment dans les domaines de la santé, du droit, des finances, de la sécurité ou des données personnelles.
-
-Le relecteur ne peut pas être l’unique auteur de la contribution contrôlée. Une production ne peut jamais être déclarée « vérifiée » par l’IA seule.
-
-## Besoin d’aide
-
-Utiliser le formulaire « Demander de l’aide » en précisant l’étape, le blocage, les essais déjà réalisés et le résultat attendu.
+Les [règles de validation](gouvernance/REGLES-VALIDATION.md) décrivent le mode solo actuel. La revue par un autre contributeur pourra être réactivée lorsque le collectif disposera de relecteurs.

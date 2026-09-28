@@ -29,5 +29,7 @@ Indiquer les éléments qui nécessitent une vérification humaine particulière
 
 ## Niveau de validation
 
-- [ ] Une review humaine est requise.
-- [ ] Deux reviews sont requises, car le contenu est sensible ou à fort impact.
+- [ ] Autocontrôle effectué par l’auteur ; limites et preuves renseignées.
+- [ ] Contrôles automatiques disponibles réussis.
+- [ ] L’auteur mainteneur valide la fusion (mode solo).
+- [ ] Revue indépendante réalisée, si disponible : [personne et lien].

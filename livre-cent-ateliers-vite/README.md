@@ -37,8 +37,8 @@ La commande npm run build conserve aussi une construction portable avec des chem
 ## Préparer le premier déploiement
 
 1. Envoyer la branche de préparation et ouvrir une PR après validation du commit local.
-2. Obtenir la review humaine exigée par le dépôt.
-3. Dans Settings → Pages → Build and deployment, sélectionner GitHub Actions.
+2. Vérifier les contrôles GitHub Actions et relire le résultat. En mode solo, l’auteur peut fusionner sa propre PR sans approbation externe.
+3. Pages est configuré sur GitHub Actions, avec HTTPS ; conserver ce réglage dans Settings → Pages.
 4. Vérifier que l’environnement github-pages autorise les déploiements depuis main.
 5. Fusionner la PR. Le workflow « Livre LN IA · GitHub Pages » teste, construit et publie le livre.
 6. Après réussite, ouvrir la page d’accueil, une adresse d’atelier et le PDF sur l’adresse publique.
@@ -46,6 +46,12 @@ La commande npm run build conserve aussi une construction portable avec des chem
 Une PR exécute les tests et la construction sans publication. Le déploiement ne s’exécute que depuis main, après réussite des contrôles. Le déclenchement manuel depuis main permet de relancer la publication une fois Pages configuré. Aucun jeton personnel n’est nécessaire : le workflow utilise GITHUB_TOKEN avec les permissions adaptées à chaque job.
 
 Le workflow publie uniquement dist : HTML, JavaScript, CSS, couverture et PDF. Les documents internes, scripts de génération et sources Word ne font pas partie des fichiers servis.
+
+## Mises à jour en solo
+
+Modifier le lecteur sur une branche, créer un commit et ouvrir une PR. Après réussite des contrôles, l’auteur mainteneur peut fusionner. Le workflow déploie automatiquement depuis `main`. La revue par un autre compte est facultative.
+
+Les consignes pédagogiques du livre décrivent aussi un travail collectif. Pour les droits et la publication de ce dépôt, les [règles actuelles](../gouvernance/REGLES-VALIDATION.md) font référence.
 
 ## Contenu et confidentialité des saisies
 
