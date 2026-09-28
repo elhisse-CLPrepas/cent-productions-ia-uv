@@ -28,6 +28,14 @@ Documents de référence :
 - [Guide de suivi des décisions V2](guide-d%C3%A9cisions-cadrage-v2.docx)
 - [Documentation GitHub Projects en français](documentation-projects-github.md)
 
+## Livre interactif des cent ateliers
+
+Le [lecteur Vite](livre-cent-ateliers-vite/README.md) propose 100 ateliers, des prompts personnalisables et un [guide PDF de 225 pages](livre-cent-ateliers-vite/public/guide-ln-ia.pdf).
+
+**Adresse de partage prévue :** https://elhisse-clprepas.github.io/cent-productions-ia-uv/
+
+La publication est préparée avec GitHub Actions. Cette adresse devient disponible après activation de Pages et réussite du premier déploiement depuis main. Le catalogue présente des projets à réaliser ; il ne représente pas cent productions déjà validées.
+
 ## Objectifs
 
 - publier 100 productions IA utiles, vérifiées et réutilisables ;
@@ -48,6 +56,14 @@ Le pilote est limité aux cinq catégories validées suivantes :
 
 Les cinq autres catégories prévues seront introduites progressivement après le pilote.
 
+## Fonctionnement actuel en solo
+
+Le responsable possède les droits d’écriture et peut fusionner sa propre PR. Depuis le 28 septembre 2026, aucune approbation par un autre compte n’est exigée.
+
+**Parcours : branche → commit → PR → contrôles réussis → fusion par l’auteur → déploiement.**
+
+Les tests et la construction du livre précèdent chaque déploiement. Les push forcés et la suppression de `main` restent interdits. Consulter le [guide de contribution](CONTRIBUTING.md) pour les étapes.
+
 ## Principes de qualité
 
 Une production est considérée comme utile et vérifiée lorsqu’elle respecte les principes suivants :
@@ -58,8 +74,8 @@ Une production est considérée comme utile et vérifiée lorsqu’elle respecte
 - les faits, les liens, les sources et les droits sont contrôlés ;
 - les limites et les risques sont signalés ;
 - aucune donnée personnelle, confidentielle ou non autorisée n’est publiée ;
-- une review humaine favorable est enregistrée avant la fusion ;
-- deux avis humains favorables sont exigés pour un contenu sensible ou à fort impact.
+- la décision de l’auteur et les contrôles effectués sont documentés avant la fusion ;
+- l’autocontrôle et une éventuelle revue indépendante sont distingués ; les limites de validation sont indiquées pour les contenus sensibles.
 
 ## Parcours d’une contribution
 
@@ -74,14 +90,14 @@ Fiche de production et livrable
         ↓
 Pull Request
         ↓
-Review humaine et corrections
+Contrôles, corrections et validation par l’auteur
         ↓
 Fusion dans main
         ↓
 Publication avec GitHub Pages
 ```
 
-Une contribution doit commencer par une Issue et utiliser le modèle officiel. Aucun push direct dans `main` n’est autorisé.
+Une production PXXX utilise une Issue et le modèle officiel. Une correction technique ou documentaire peut être suivie directement dans sa PR. L’auteur dispose des droits d’écriture sur `main` ; le parcours par PR reste recommandé pour la traçabilité.
 
 ## Structure cible
 
@@ -132,17 +148,17 @@ Exemple : `P001-enseignement-generer-fiche-pedagogique.md`.
 
 ## Contribuer
 
-Le dépôt est en cours de construction. Le guide détaillé `CONTRIBUTING.md`, les modèles d’Issues et le modèle de Pull Request seront ajoutés avant l’ouverture du pilote.
+Le [guide de contribution](CONTRIBUTING.md), les modèles d’Issues et le modèle de Pull Request sont disponibles. Le fonctionnement actuel est adapté à un auteur seul.
 
-Le futur parcours de contribution sera le suivant :
+Pour une nouvelle production PXXX :
 
 1. ouvrir ou choisir une Issue ;
-2. attendre sa qualification et son affectation ;
+2. le responsable qualifie et affecte la production, y compris à lui-même ;
 3. créer une branche `contribution/PXXX-titre-court` ;
 4. compléter la fiche officielle et ajouter les preuves ;
 5. ouvrir une Pull Request liée à l’Issue ;
-6. traiter les observations des relecteurs ;
-7. attendre la validation et la fusion par un mainteneur.
+6. vérifier les contrôles et traiter les corrections ;
+7. l’auteur mainteneur valide et fusionne la PR.
 
 ## Licences
 
@@ -157,7 +173,7 @@ Les fichiers de licence correspondants seront ajoutés pendant la construction d
 
 L’IA peut assister la rédaction, l’analyse et certains contrôles, mais elle ne peut pas déclarer seule une production « vérifiée ».
 
-Le contributeur produit, le collectif relit, un mainteneur fusionne et le responsable du projet arbitre les décisions structurantes. Seules les contributions fusionnées dans `main` sont officielles.
+En mode solo, le responsable produit, contrôle et fusionne. La revue du collectif est ajoutée lorsqu’un relecteur est disponible. Les [règles de validation](gouvernance/REGLES-VALIDATION.md) précisent ce fonctionnement. Seules les contributions fusionnées dans `main` sont officielles.
 
 ---
 

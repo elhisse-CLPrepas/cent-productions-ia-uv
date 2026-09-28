@@ -1,5 +1,7 @@
 # Checklist du contributeur
 
+Cette checklist concerne les nouvelles productions PXXX. Pour une correction technique ou documentaire, renseigner dans la PR uniquement les contrôles applicables. En mode solo, le responsable peut qualifier et s’attribuer lui-même la production.
+
 ## Avant la Pull Request
 
 - [ ] L’Issue est qualifiée et m’est affectée.

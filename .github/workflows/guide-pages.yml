@@ -1,0 +1,73 @@
+name: Livre LN IA · GitHub Pages
+
+on:
+  pull_request:
+    paths:
+      - 'livre-cent-ateliers-vite/**'
+      - '.github/workflows/guide-pages.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'livre-cent-ateliers-vite/**'
+      - '.github/workflows/guide-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: guide-pages-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    name: Vérifier et construire le livre
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: livre-cent-ateliers-vite
+    steps:
+      - name: Récupérer les sources
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Préparer Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: livre-cent-ateliers-vite/package-lock.json
+      - name: Installer les dépendances verrouillées
+        run: npm ci
+      - name: Vérifier les prompts et les données
+        run: npm test
+      - name: Construire pour le chemin GitHub Pages
+        run: npm run build:pages
+      - name: Vérifier les fichiers publiables
+        run: npm run check:pages
+      - name: Préparer l’artefact de publication
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: livre-cent-ateliers-vite/dist
+
+  deploy:
+    name: Publier le livre sur GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Vérifier la configuration Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Déployer l’artefact vérifié
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

@@ -15,6 +15,10 @@ Le contributeur s’engage à :
 
 Le collectif s’engage à accompagner les débutants, à formuler des retours respectueux et à ne pas confondre rapidité de publication et qualité.
 
+## Application en mode solo
+
+Lorsqu’aucun relecteur n’est disponible, le responsable effectue et documente son autocontrôle, puis décide de publier. Une revue indépendante est indiquée uniquement lorsqu’elle a réellement eu lieu. Voir les [règles de validation](REGLES-VALIDATION.md).
+
 ## Principe directeur
 
 > L’IA assiste. Le membre produit. Le collectif relit. L’humain valide.

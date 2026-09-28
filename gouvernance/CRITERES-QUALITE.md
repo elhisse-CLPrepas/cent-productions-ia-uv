@@ -32,6 +32,6 @@ Une production est déclarée « utile et vérifiée » lorsqu’elle satisfait 
 
 - aucune donnée sensible ;
 - aucune erreur bloquante connue ;
-- une review humaine favorable ;
-- deux avis humains favorables pour un contenu sensible ou à fort impact ;
-- statut GitHub Projects positionné sur `Validée` avant publication.
+- validation explicite par l’auteur après autocontrôle, conformément au [mode solo](REGLES-VALIDATION.md) ;
+- mention des limites de validation et des éventuels avis indépendants ;
+- mise à jour de GitHub Projects si une carte suit la production ; une carte n’est pas nécessaire pour une simple correction technique.
