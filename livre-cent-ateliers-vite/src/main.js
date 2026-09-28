@@ -5,6 +5,7 @@ import {escapeHtml as esc, normalize, completeText, promptText, unresolved, atel
 
 const $ = (s) => document.querySelector(s);
 const state = {query:'', category:'', level:'', values:{}, view:'overview'};
+const logoUrl = window.__BOOK_LOGO__ || './logo-ln-ia.png';
 const coverUrl = window.__BOOK_COVER__ || './couverture.png';
 const pdfUrl = window.__BOOK_PDF__ || './guide-ln-ia.pdf';
 const category = (id) => book.categories.find(c=>c.id===Number(id));
@@ -18,8 +19,8 @@ const projectLink = p => '#atelier/'+p.id;
 const chapterList = () => book.categories.map(c=>'<a href="'+catLink(c)+'" class="chapter-link"><span>'+String(c.id).padStart(2,'0')+'</span><span>'+esc(c.short)+'</span></a>').join('');
 
 function shell() {
-  $('#app').innerHTML = '<header class="mobile-bar"><a href="#sommaire">LN IA <span>Le livre des ateliers</span></a><button id="menu" aria-label="Afficher le sommaire" aria-expanded="false">☰</button></header>'+
-    '<aside class="sidebar" aria-label="Navigation principale"><a class="brand" href="#sommaire"><span class="brand-mark">LN<span>IA</span></span><span>COLLECTION PÉDAGOGIQUE</span></a>'+
+  $('#app').innerHTML = '<header class="mobile-bar"><a class="mobile-brand" href="#sommaire"><img class="mobile-logo" src="'+logoUrl+'" alt="LN IA" width="1774" height="887"><span>Le livre des ateliers</span></a><button id="menu" aria-label="Afficher le sommaire" aria-expanded="false">☰</button></header>'+
+    '<aside class="sidebar" aria-label="Navigation principale"><a class="brand" href="#sommaire"><img class="brand-logo" src="'+logoUrl+'" alt="LN IA" width="1774" height="887"><span>COLLECTION PÉDAGOGIQUE</span></a>'+
     '<nav><a class="nav-main" href="#sommaire">Le sommaire <span>↗</span></a><a class="nav-main" href="#catalogue">Les 100 ateliers <span>↗</span></a><p class="nav-label">LES DIX CHAPITRES</p>'+chapterList()+
     '<div class="nav-extra"><a href="#methode">La méthode LN IA</a><a href="#vite">Le parcours Vite</a><a href="#preuves">La fiche de preuve</a></div></nav>'+
     '<div class="sidebar-bottom"><a href="'+pdfUrl+'" download>↓ Télécharger le PDF <small>225 pages · navigation cliquable</small></a><p>Prof. Abderrahman EL HISSE<br>Édition du 27 septembre 2026</p></div></aside>'+

@@ -65,6 +65,7 @@ Le catalogue décrit des réalisations à entreprendre. Il ne déclare aucune pr
 - src/page-map.json : correspondances de pages et empreinte du PDF.
 - public/guide-ln-ia.pdf : édition publiée du livre.
 - public/couverture.png : couverture fournie par l’auteur.
+- public/logo-ln-ia.png : logo fourni, affiché dans la navigation sur ordinateur et mobile.
 - scripts/extract-book.py, build-pdf.py, verify-pdf.py et package-book.py : outils éditoriaux locaux.
 
 Ces outils Python demandent l’arborescence de travail d’origine, les fichiers sources et, pour le PDF, les polices Windows Calibri et Georgia ainsi que reportlab. La vérification PDF utilise PyMuPDF et Pillow. Les polices ne sont pas redistribuées. Les exports autonomes sont produits sous output à la racine du dépôt ; ils ne sont pas requis pour GitHub Pages.
